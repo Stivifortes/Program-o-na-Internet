@@ -319,6 +319,10 @@ nav {
     height: 100%;
 }
 
+.aparecer {
+    display: none;
+}
+
 
 /*------Skill div-------*/
 
@@ -459,10 +463,16 @@ nav {
 /*Form*/
 
 #contacto {
-    background-color: #a0a1a3;
+    background-color: #fff;
     height: 300px;
     margin-bottom: 100px;
     position: relative;
+}
+
+form {
+    position: absolute;
+    top: 50px;
+    left: 200px;
 }
 
 input[type="text"] {
@@ -476,12 +486,37 @@ input[type="text"] {
     background-color: hsla(0, 19%, 89%, 0.5);
 }
 
+#contacto button {
+    position: absolute;
+    border: none;
+    padding: 6px 132px;
+    border-radius: 6px;
+    margin-top: -40px;
+    margin-left: 470px;
+    color: black;
+    font-size: 20px;
+    border: 3px solid rgb(54, 173, 177);
+    opacity: 0.5;
+}
+
+#message {
+    float: right;
+    margin-top: -160px;
+    width: 400px;
+    padding-bottom: 90px;
+    border: none;
+    background-color: hsla(0, 19%, 89%, 0.5);
+    border-radius: 6px;
+    outline: none;
+    position: absolute;
+    margin-left: 470px;
+}
+
 
 /* Social Medias*/
 
 #socialMedias {
     background-image: url(images/handshake.jpg);
-    background-color: blueviolet;
     background-attachment: fixed;
     background-position: center;
     height: 380px;
