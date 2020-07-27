@@ -1,166 +1,464 @@
 /*Estilos gerais*/
-*{
-	margin: 0px;
-	padding: 0px;
+
+* {
+    margin: 0px;
+    padding: 0px;
 }
+
 @font-face {
-	font-family: myFont;
-	src: url(https://fonts.google.com/specimen/Raleway);
+    font-family: myFont;
+    src: url(https://fonts.google.com/specimen/Raleway);
 }
 
 body {
-	background-color: #fff;
-	font-family: myFont;
+    background-color: #fff;
+    font-family: myFont;
 }
 
 #botoes {
-	list-style: none;
-	width: 150px;
-	display: flex;
-	position: absolute;
-    top: 40%;
-    right: 50%;
+    list-style: none;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    top: 55%;
+    right: 42%;
 }
 
 #botoes li {
-	position: absolute;
-	top: 40%;
-	right: 50%;
-	border: 2px solid rgb(255, 255, 255);
-	width: 10px;
-	height: 10px;
-	margin: 5px; 
+    border: 2px solid rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
+    margin: 5px;
 }
 
 #descer {
-	background-color: aqua;
-	color: black;
-	font-size: medium;
-	position: absolute;
-    top: 50%;
+    background-color: aqua;
+    color: black;
+    font-size: medium;
+    position: absolute;
+    top: 60%;
     right: 50%;
 }
+
+
 /*Slide Show -Carrossel -Full Screen*/
+
 .carrossel {
-	position: relative;
-	width: 100%;
-	height: 100vh;
-	background: rgb(120, 122, 122);
-	overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: rgb(120, 122, 122);
+    overflow: hidden;
 }
 
 #imageBg {
-	width: 80%;
-	height: 100vh;
-	background-image: url(images/1.jpg);
-	opacity: 0.6;
-	display: block;
-	margin: auto;
-	background-repeat: no-repeat;
-	background-size: cover;
-	transition: 1s;
+    width: 75%;
+    height: 100vh;
+    background-image: url(images/1.jpg);
+    opacity: 0.6;
+    display: block;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 1s;
 }
 
-.anterior, .proximo {
-	position: relative;
-	margin-top: -420px;
-	width: 45px;
-	height: 80px;
-	background-color: #1fb5ac;
-	color: #fff;
-	font-size: 30px;
-	text-align: center;
-	line-height: 80px;
-	cursor: pointer;
+.anterior,
+.proximo {
+    position: relative;
+    margin-top: -420px;
+    width: 45px;
+    height: 80px;
+    background-color: #1fb5ac;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
 }
 
 .anterior {
-	float: left;
+    float: left;
 }
 
 .proximo {
-	float: right;
+    float: right;
 }
 
 .texto {
-	position: absolute;
-	top: 15%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 7vw;
-	font-weight: bold;
-	color:white;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    font-weight: bold;
+    color: white;
 }
+
 .txtDestaque {
-	color: #1fb5ac;
+    color: #1fb5ac;
 }
 
 .menor {
-	top: 35%;
-	font-size: 5vw;
+    top: 45%;
+    font-size: 5vw;
 }
 
+
 /*------>Menu Sticky<---------*/
+
 nav {
-	height: 80px;
-	background-color: #fff;
-	position: sticky;
-	top: 0px;
-	border-bottom: 1px solid rgb(156, 154, 154);
+    height: 80px;
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    background-color: #fff;
+    border-bottom: 1px solid rgb(156, 154, 154);
 }
+
 #logo {
-	width: 250px;
-	height: 55px;
-	float: left;
-	margin-left: 10%;
-	padding: 5px;
+    width: 250px;
+    height: 55px;
+    float: left;
+    margin-left: 12%;
+    padding: 5px;
 }
 
 #listaMenu {
-	float: right;
-	display: flex;
-	list-style: none;
-	background-color: #fff;
-	margin-right: 10%;
+    float: right;
+    display: flex;
+    list-style: none;
+    margin-right: 15%;
 }
 
 #listaMenu a {
-	margin: 15px;
-	line-height: 80px;
-	padding: 10px;
-	text-decoration: none;
-	color: black;
-	font-size: 18px;
+    line-height: 80px;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
 }
 
 #listaMenu a:hover {
-	color: #1fb5ac;
+    color: #1fb5ac;
 }
+
 
 /* Section About*/
+
 #about {
-	margin-top: 150px;
-	background-color: rgb(209, 137, 137);
+    margin-top: 150px;
+    background-color: #fff;
+    width: 100%;
 }
 
-#sectionTexto {
-	background-color: red;
-	width: 90%;
-	height: 100px;
+
+/*Marcador, Titulo e Paragráfo*/
+
+#sectionHeader {
+    background-color: #fff;
+    height: 150px;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
+
 .marcador {
-	width: 200px;
-	height: 100px;
-	background-color: #1fb5ac;
-	float: left;
-	margin-right: 20px;
+    background-color: #1fb5ac;
+    height: 150px;
+    width: 160px;
+    float: left;
 }
 
-h1 {
-	font-size: 70px;
-	color: #1fb5ac;
-	font-weight: bold;
-	float: left;
-	margin-right: 20px;
+.titulo {
+    background-color: #fff;
+    color: #1fb5ac;
+    font-size: 70px;
+    text-align: right;
+    line-height: 75px;
+    font-weight: bold;
+    height: 150px;
+    width: 265px;
+    float: left;
+}
 
+.txtTitulo {
+    padding-right: 15px;
+}
+
+.destaqueTitulo {
+    color: #000;
+    text-align: right;
+}
+
+.paragrafo {
+    margin-left: 20px;
+    background-color: #fff;
+    overflow-wrap: break-word;
+    position: absolute;
+    right: 150px;
+    top: 20px;
+    height: 130px;
+    width: 50%;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 35px;
+}
+
+.parag {
+    padding-top: 30px;
+    padding-right: 40px;
+}
+
+
+/*------About Baixo----------*/
+
+#aboutBaixo {
+    background-color: #fff;
+    position: relative;
+    height: 400px;
+    width: 72%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#divImg,
+#divTxt {
+    display: inline;
+    float: left;
+}
+
+#divTxt {
+    margin: 30px;
+    padding-top: 100px;
+    padding-left: 10px;
+}
+
+#aboutImg {
+    width: 500px;
+    height: 350px;
+}
+
+#aboutBaixo #aboutTxt {
+    display: inline-block;
+    color: red;
+}
+
+
+/*-----Our Marks------*/
+
+#circleConteiner {
+    background-color: #f1f2f7;
+}
+
+#divCircles {
+    width: 72%;
+    margin: auto;
+    height: 200px;
+    background-color: #f1f2f7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circulo {
+    text-align: center;
+    font-size: 20px;
+    color: #6a6a6d;
+    padding-top: 8px;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #a0a1a3;
+}
+
+.nmrs {
+    color: #1fb5ac;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+/*-------Team----------*/
+
+
+/*Cards*/
+
+#conteiner {
+    margin-top: 200px;
+    margin: auto;
+    /*Center the div in the screen*/
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.box {
+    width: 200px;
+    height: 350px;
+    margin: 12px;
+    text-align: center;
+    background-color: #1fb5ac;
+    box-shadow: -8px 8px 0px grey;
+}
+
+.myImage {
+    height: 250px;
+}
+
+.manImg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*------Skill div-------*/
+
+#skills {
+    height: 400px;
+    background-color: #a0a1a3;
+}
+
+#skillImg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* What we Do Section*/
+
+#conteinerServico {
+    width: 70%;
+    margin: auto;
+    background-color: #fff;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.cardServicos {
+    width: 220px;
+    height: 200px;
+    background-color: #808083;
+    border: 1px solid #f1f2f7;
+}
+
+.odd {
+    background-color: #d0d1d4;
+}
+
+
+/* Packages Pricing*/
+
+#packagePricing {
+    margin-top: 20px;
+    height: 400px;
+    background-color: #6a6a6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.package {
+    width: 200px;
+    height: 300px;
+    background-color: red;
+    margin: 10px;
+}
+
+
+/* Works Section*/
+
+
+/* Menu Filtro*/
+
+#menuUl {
+    display: flex;
+    background-color: #fff;
+    height: 60px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuUl li {
+    margin: 10px;
+    border: 1px solid #57575a;
+    background-color: #fff;
+    padding: 8px;
+}
+
+#menuUl li:hover {
+    border: 3px solid #1fb5ac;
+}
+
+
+/*-----Portfolio-----*/
+
+#portfolio {
+    background-color: #57575a;
+    width: 85%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.jobs {
+    background-color: #f1f2f7;
+    width: 300px;
+    height: 180px;
+    margin: 20px;
+    box-shadow: 8px 8px 8px #1fb5ac;
+}
+
+.portfolioImg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*----Our Clients----*/
+
+#clients {
+    height: 300px;
+    background-color: #a0a1a3;
+}
+
+
+/* Conctact Form*/
+
+
+/*Form*/
+
+#contacto {
+    background-color: #a0a1a3;
+    height: 200px;
+}
+
+
+/* Social Medias*/
+
+#socialMedias {
+    background-color: blueviolet;
+    height: 250px;
+}
+
+
+/*Footer*/
+
+footer {
+    height: 80px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 22px;
 }

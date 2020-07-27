@@ -1,54 +1,348 @@
 <!DOCTYPE html>
 <html lang="Eng">
+
 <head>
-	<title>Carrossel</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Carrossel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-	<div class="carrossel">
-		<div id="imageBg"></div>
-		<p class="texto maior">Your <span class="txtDestaque">Text</span> Goes</p>
-		<p class="texto menor"><span class="txtDestaque menor">Awesome </span>Works</p>
-		<div class="anterior" onclick="anterior()"><</div>
-		<div class="proximo" onclick="proximo()">></div>
-	</div>
-	<ul id="botoes">
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
-	<!--Atenção para este botao-->
-	<a href="#" id="descer">&Del;</a>
+    <div class="carrossel">
+        <div id="imageBg"></div>
+        <p class="texto maior">Your <span class="txtDestaque">Text</span> Goes</p>
+        <p class="texto menor"><span class="txtDestaque menor">Awesome </span>Works</p>
+        <div class="anterior" onclick="anterior()">
+            <</div>
+                <div class="proximo" onclick="proximo()">></div>
+                <!---->
+                <ul id="botoes">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <!--Botao Descer-->
+                <a href="#" id="descer">&Del;</a>
+        </div>
 
-	<!--Menu Sticky-->
-	<nav>
-		<div>
-			<img src="images/logo.png" id="logo" alt="Logo">
-		</div>
-		<ul id="listaMenu">
-			<li><a href="#about">Home</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Team</a></li>
-			<li><a href="#">Service</a></li>
-			<li><a href="#">Works</a></li>
-			<li><a href="#">Contact</a></li>
-		</ul>
-	</nav>
-	<!--Section Abaut-->
-	<section id="about">
-		<div class="marcador"></div>
-		<div id="sectionTexto">
-			<h1>About<br/>Us</h1>
-			<p>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-				Aperiam inventore quasi laboriosam quisquam minus qui! 
-				Aut distinctio quia placeat ex architecto ipsa cumque modi, 
-				sequi, ea, et porro. Ipsa, sint.
-			</p>
-		</div>
-	</section>
- 
+        <!--Menu Sticky-->
+        <nav>
+            <div>
+                <img src="images/logo.png" id="logo" alt="Logo">
+            </div>
+            <ul id="listaMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Section Abaut-->
+        <section id="about">
+            <div id="sectionHeader">
+                <div class="marcador"></div>
+                <div class="titulo">
+                    <p class="txtTitulo">About <span class="destaqueTitulo">US</span></p>
+                </div>
+                <div class="paragrafo">
+                    <p class="parag"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, adipisci aspernatur quos eligendi et, hic similique soluta error eveniet mollitia illum hic similique soluta error eveniet mollitia illum.
+                    </p>
+                </div>
+            </div>
+            <div id="aboutBaixo">
+                <div id="divImg">
+                    <img src="images/42.jpg" alt="About" id="aboutImg">
+                </div>
+                <div id="divTxt">
+                    <h2>MORE ABOUT US</h2>
+                    <p><strong>
+						Lorem ipsum, dolor sit amet consectetur 
+						</strong>
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur a dolore aut!</p>
+                </div>
+            </div>
+            <div id="circleConteiner">
+                <div id="divCircles">
+                    <div class="circulo"><span class="nmrs">4</span><br>Members</div>
+                    <div class="circulo"><span class="nmrs">24</span><br>Themes</div>
+                    <div class="circulo"><span class="nmrs">23k</span><br>Sells</div>
+                    <div class="circulo"><span class="nmrs">99</span><br>Awards</div>
+                </div>
+            </div>
+        </section>
+        <!--Our Team Section-->
+        <section id="team">
+            <div id="sectionHeader">
+                <div class="marcador"></div>
+                <div class="titulo">
+                    <p class="txtTitulo">OUR <span class="destaqueTitulo">TEAM</span></p>
+                </div>
+                <div class="paragrafo">
+                    <p class="parag"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, adipisci aspernatur quos eligendi et, hic similique soluta error eveniet mollitia illum hic similique soluta error eveniet mollitia illum.
+                    </p>
+                </div>
+            </div>
+            <!---Cartões com Hover-->
+            <div id="conteiner">
+                <div class="box">
+                    <div class="myImage">
+                        <img src="images/man.jpg" class="manImg">
+                    </div>
+                    <div>
+                        <p>Sara Maria</p>
+                        <p>Web Developer</p>
+                        <p class="aparecer">
+                            Lorem ipsum dolor, sit fugiat, soluta sapiente tempore nihil sequi possimus. </p>
+                    </div>
+                </div>
 
-<script type="text/javascript" src="script.js"></script>
+                <div class="box">
+                    <div class="myImage">
+                        <img src="images/man.jpg" class="manImg">
+                    </div>
+                    <div class="escondido">
+                        <p>Sara Maria</p>
+                        <p>Web Developer</p>
+                        <p class="aparecer">
+                            Lorem ipsum dolor, sit fugiat, soluta sapiente tempore nihil sequi possimus.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="myImage">
+                        <img src="images/man.jpg" class="manImg">
+                    </div>
+                    <div class="escondido">
+                        <p>Sara Maria</p>
+                        <p>Web Developer</p>
+                        <p class="aparecer">
+                            Lorem ipsum dolor, sit fugiat, soluta sapiente tempore nihil sequi possimus.
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="myImage">
+                        <img src="images/man.jpg" class="manImg">
+                    </div>
+                    <div class="escondido">
+                        <p>Sara Maria</p>
+                        <p>Web Developer</p>
+                        <p class="aparecer">
+                            Lorem ipsum dolor, sit fugiat, soluta sapiente tempore nihil sequi possimus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--Skills Section-->
+            <div id="skills">
+                <img src="images/11.jpg" alt="Skills" id="skillImg">
+            </div>
+        </section>
+
+        <!--What We Do Section-->
+        <section id="services">
+            <!--Header-->
+            <div id="sectionHeader">
+                <div class="marcador"></div>
+                <div class="titulo">
+                    <p class="txtTitulo">WHAT<span class="destaqueTitulo"><br> WE DO</span></p>
+                </div>
+                <div class="paragrafo">
+                    <p class="parag"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, adipisci aspernatur quos eligendi et, hic similique soluta error eveniet mollitia illum hic similique soluta error eveniet mollitia illum.
+                    </p>
+                </div>
+            </div>
+            <!--Service Cards-->
+            <div id="conteinerServico">
+                <div class="cardServicos">
+                    <p>Icon</p>
+                    <h3>Designing</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimusbus minus.
+                    </p>
+                </div>
+                <div class="cardServicos odd">
+                    <p>Icon</p>
+                    <h3>Developing</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimusbus minus.
+                    </p>
+                </div>
+                <div class="cardServicos">
+                    <p>Icon</p>
+                    <h3>Marketing</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimusbus minus.
+                    </p>
+                </div>
+                <div class="cardServicos odd">
+                    <p>Icon</p>
+                    <h3>Branding</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimusbus minus.
+                    </p>
+                </div>
+                <div class="cardServicos odd">
+                    <p>Icon</p>
+                    <h3>Analytics</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimusbus minus.
+                    </p>
+                </div>
+                <div class="cardServicos">
+                    <p>Icon</p>
+                    <h3>Mobile Apps</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimusbus minus.
+                    </p>
+                </div>
+                <div class="cardServicos odd">
+                    <p>Icon</p>
+                    <h3>E-commerce</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimusbus minus.
+                    </p>
+                </div>
+                <div class="cardServicos">
+                    <p>Icon</p>
+                    <h3>Support</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimusbus minus.
+                    </p>
+                </div>
+            </div>
+            <!--Packages Pricing-->
+            <div id="packagePricing">
+                <div class="package">
+                    <p id="nome">Nome</p>
+                    <p id="preco">Preco</p>
+                    <p id="descricao">Descricao</p>
+                    <button>Sign Up</button>
+                </div>
+                <div class="package">
+                    <p id="nome">Nome</p>
+                    <p id="preco">Preco</p>
+                    <p id="descricao">Descricao</p>
+                    <button>Sign Up</button>
+                </div>
+                <div class="package">
+                    <p id="nome">Nome</p>
+                    <p id="preco">Preco</p>
+                    <p id="descricao">Descricao</p>
+                    <button>Sign Up</button>
+                </div>
+                <div class="package">
+                    <p id="nome">Nome</p>
+                    <p id="preco">Preco</p>
+                    <p id="descricao">Descricao</p>
+                    <button>Sign Up</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Our Works Section-->
+        <section id="works">
+            <!--Header-->
+            <div id="sectionHeader">
+                <div class="marcador"></div>
+                <div class="titulo">
+                    <p class="txtTitulo">OUR <span class="destaqueTitulo">WORKS</span></p>
+                </div>
+                <div class="paragrafo">
+                    <p class="parag"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, adipisci aspernatur quos eligendi et, hic similique soluta error eveniet mollitia illum hic similique soluta error eveniet mollitia illum.
+                    </p>
+                </div>
+            </div>
+            <!--works-->
+            <div id="filtroMenu">
+                <ul id="menuUl">
+                    <li>ALL</li>
+                    <li>WEB DESIGNING</li>
+                    <li>ILUSTRATOR</li>
+                    <li>UI/UX DESIGN</li>
+                    <li>PRINT</li>
+                    <li>VIDEO</li>
+                </ul>
+            </div>
+            <!--Portfolio-->
+            <div id="portfolio">
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+                <div class="jobs">
+                    <img src="images/99.jpg" alt="portfolio" class="portfolioImg">
+                </div>
+            </div>
+            <!--Our Clients-->
+            <div id="clients">
+                <img src="" alt="">
+            </div>
+        </section>
+
+        <!--Get In Touch Section-->
+        <section id="contact">
+            <!--Header-->
+            <div id="sectionHeader">
+                <div class="marcador"></div>
+                <div class="titulo">
+                    <p class="txtTitulo">GET IN<span class="destaqueTitulo"> TOUCH</span></p>
+                </div>
+                <div class="paragrafo">
+                    <p class="parag"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, adipisci aspernatur quos eligendi et, hic similique soluta error eveniet mollitia illum hic similique soluta error eveniet mollitia illum.
+                    </p>
+                </div>
+            </div>
+            <!--Contact Form-->
+            <div id="contacto">
+                <form action="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text" placeholder="Your Email">
+                    <input type="text" placeholder="Subject">
+                    <input type="text">
+                    <input type="submit">
+                </form>
+            </div>
+            <div id="socialMedias">
+                <ul id="listaContato">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <footer>
+                &copy; 2020 - Developed By <strong>Stiven Fortes</strong>
+            </footer>
+        </section>
+        <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
