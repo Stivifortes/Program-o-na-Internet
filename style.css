@@ -15,31 +15,6 @@ body {
     font-family: myFont;
 }
 
-#botoes {
-    list-style: none;
-    width: 150px;
-    display: flex;
-    position: absolute;
-    top: 55%;
-    right: 42%;
-}
-
-#botoes li {
-    border: 2px solid rgb(255, 255, 255);
-    width: 10px;
-    height: 10px;
-    margin: 5px;
-}
-
-#descer {
-    background-color: aqua;
-    color: black;
-    font-size: medium;
-    position: absolute;
-    top: 60%;
-    right: 50%;
-}
-
 
 /*Slide Show -Carrossel -Full Screen*/
 
@@ -105,6 +80,34 @@ body {
 }
 
 
+/* Botoes De Inicio*/
+
+#botoes {
+    list-style: none;
+    width: 150px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 55%;
+    right: 45%;
+}
+
+#botoes li {
+    border: 2px solid rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+}
+
+#descer {
+    color: black;
+    font-size: medium;
+    position: absolute;
+    top: 60%;
+    right: 50%;
+}
+
+
 /*------>Menu Sticky<---------*/
 
 nav {
@@ -117,10 +120,10 @@ nav {
 }
 
 #logo {
-    width: 250px;
-    height: 55px;
+    width: 200px;
+    height: 100px;
     float: left;
-    margin-left: 12%;
+    margin-left: 10%;
     padding: 5px;
 }
 
@@ -293,7 +296,7 @@ nav {
     width: 70%;
     height: 450px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     background-color: #fff;
 }
@@ -304,7 +307,7 @@ nav {
     margin: 12px;
     text-align: center;
     background-color: #1fb5ac;
-    box-shadow: -8px 8px 0px grey;
+    box-shadow: -8px 8px 0px #045550;
 }
 
 .myImage {
@@ -337,17 +340,29 @@ nav {
     margin: auto;
     background-color: #fff;
     height: 400px;
+    line-height: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 100px;
 }
 
+.icone {
+    margin-top: 20px;
+    font-size: 40px;
+    color: #1fb5ac;
+}
+
 .cardServicos {
+    text-align: center;
     width: 220px;
     height: 200px;
     background-color: #808083;
     border: 1px solid #f1f2f7;
+}
+
+.cardServicos:hover {
+    background-color: #045550;
 }
 
 .odd {
@@ -431,7 +446,10 @@ nav {
 
 #clients {
     height: 300px;
+    width: 100%;
     background-color: #a0a1a3;
+    background-image: url(images/clientes.jpg);
+    background-position: center;
 }
 
 
@@ -442,15 +460,46 @@ nav {
 
 #contacto {
     background-color: #a0a1a3;
-    height: 200px;
+    height: 300px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+input[type="text"] {
+    display: block;
+    height: 40px;
+    width: 441px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 18px;
+    background-color: hsla(0, 19%, 89%, 0.5);
 }
 
 
 /* Social Medias*/
 
 #socialMedias {
+    background-image: url(images/handshake.jpg);
     background-color: blueviolet;
-    height: 250px;
+    background-attachment: fixed;
+    background-position: center;
+    height: 380px;
+}
+
+#listaContato {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#listaContato li {
+    padding-top: 120px;
+    font-size: 80px;
+    color: #fff;
+    margin: 20px;
+    vertical-align: middle;
 }
 
 
